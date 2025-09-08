@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MindQ - Leaderboard</title>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">MindQ</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#running-exams">Running Exams</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="leaderboard.html" class="active">Leaderboard</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#start" class="cta-button">Start Exam</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="leaderboard-hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>🏆 Live Rankings & Leaderboards</h1>
+                    <p>See where you stand among thousands of ambitious learners. Track your progress and compete with
+                        the best!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard-filters">
+            <div class="container">
+                <div class="filter-tabs fade-in">
+                    <button class="filter-tab active" data-exam="mathematics">Mathematics Olympiad</button>
+                    <button class="filter-tab" data-exam="physics">Physics Challenge</button>
+                    <button class="filter-tab" data-exam="programming">Programming Contest</button>
+                    <button class="filter-tab" data-exam="english">English Proficiency</button>
+                    <button class="filter-tab" data-exam="chemistry">Chemistry Assessment</button>
+                </div>
+                <div class="filter-options fade-in">
+                    <select class="filter-select">
+                        <option value="overall">Overall Rankings</option>
+                        <option value="current">Current Exam</option>
+                        <option value="weekly">This Week</option>
+                        <option value="monthly">This Month</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard-main">
+            <div class="container">
+                <div class="leaderboard-stats fade-in">
+                    <div class="exam-info">
+                        <div class="exam-badge">
+                            <div class="exam-icon">📐</div>
+                            <div class="exam-details">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Live • 1,247 participants • 42 minutes left</p>
+                            </div>
+                        </div>
+                        <div class="exam-metrics">
+                            <div class="metric">
+                                <span class="metric-number">85.7%</span>
+                                <span class="metric-label">Average Score</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">23</span>
+                                <span class="metric-label">Questions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">90min</span>
+                                <span class="metric-label">Duration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leaderboard-container fade-in">
+                    <!-- Top 3 Winners Podium -->
+                    <div class="podium">
+                        <div class="podium-item second-place">
+                            <div class="podium-avatar">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=764ba2&color=fff&size=80"
+                                    alt="Sarah Chen">
+                                <div class="rank-badge silver">2</div>
+                            </div>
+                            <h4>Sarah Chen</h4>
+                            <p>Score: 94.2%</p>
+                            <div class="podium-base silver-base">
+                                <span>2nd</span>
+                            </div>
+                        </div>
+
+                        <div class="podium-item first-place">
+                            <div class="podium-avatar">
+                                <img src="https://ui-avatars.com/api/?name=Alex+Rahman&background=667eea&color=fff&size=100"
+                                    alt="Alex Rahman">
+                                <div class="rank-badge gold">1</div>
+                                <div class="crown">👑</div>
+                            </div>
+                            <h4>Alex Rahman</h4>
+                            <p>Score: 98.5%</p>
+                            <div class="podium-base gold-base">
+                                <span>1st</span>
+                            </div>
+                        </div>
+
+                        <div class="podium-item third-place">
+                            <div class="podium-avatar">
+                                <img src="https://ui-avatars.com/api/?name=Mike+Johnson&background=ff6b6b&color=fff&size=80"
+                                    alt="Mike Johnson">
+                                <div class="rank-badge bronze">3</div>
+                            </div>
+                            <h4>Mike Johnson</h4>
+                            <p>Score: 92.8%</p>
+                            <div class="podium-base bronze-base">
+                                <span>3rd</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leaderboard Table -->
+                    <div class="leaderboard-table">
+                        <div class="table-header">
+                            <h3>📊 Complete Rankings</h3>
+                            <div class="table-actions">
+                                <button class="refresh-btn">🔄 Refresh</button>
+                                <button class="export-btn">📊 Export</button>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="rankings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Participant</th>
+                                        <th>Score</th>
+                                        <th>Time Taken</th>
+                                        <th>Accuracy</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="rank-row top-rank">
+                                        <td><span class="rank-number gold">1</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=Alex+Rahman&background=667eea&color=fff&size=40"
+                                                    alt="Alex Rahman">
+                                                <div>
+                                                    <span class="name">Alex Rahman</span>
+                                                    <span class="location">Dhaka, Bangladesh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score excellent">98.5%</span></td>
+                                        <td>67:34</td>
+                                        <td>97.8%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row top-rank">
+                                        <td><span class="rank-number silver">2</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=764ba2&color=fff&size=40"
+                                                    alt="Sarah Chen">
+                                                <div>
+                                                    <span class="name">Sarah Chen</span>
+                                                    <span class="location">Singapore</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score excellent">94.2%</span></td>
+                                        <td>72:18</td>
+                                        <td>95.7%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row top-rank">
+                                        <td><span class="rank-number bronze">3</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=Mike+Johnson&background=ff6b6b&color=fff&size=40"
+                                                    alt="Mike Johnson">
+                                                <div>
+                                                    <span class="name">Mike Johnson</span>
+                                                    <span class="location">New York, USA</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score excellent">92.8%</span></td>
+                                        <td>69:45</td>
+                                        <td>94.1%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row">
+                                        <td><span class="rank-number">4</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=48c78e&color=fff&size=40"
+                                                    alt="Priya Sharma">
+                                                <div>
+                                                    <span class="name">Priya Sharma</span>
+                                                    <span class="location">Mumbai, India</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score good">90.3%</span></td>
+                                        <td>74:22</td>
+                                        <td>92.6%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row">
+                                        <td><span class="rank-number">5</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=David+Kim&background=a29bfe&color=fff&size=40"
+                                                    alt="David Kim">
+                                                <div>
+                                                    <span class="name">David Kim</span>
+                                                    <span class="location">Seoul, South Korea</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score good">89.1%</span></td>
+                                        <td>71:56</td>
+                                        <td>91.3%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row">
+                                        <td><span class="rank-number">6</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=Emma+Wilson&background=ff9ff3&color=fff&size=40"
+                                                    alt="Emma Wilson">
+                                                <div>
+                                                    <span class="name">Emma Wilson</span>
+                                                    <span class="location">London, UK</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score good">87.4%</span></td>
+                                        <td>76:33</td>
+                                        <td>89.7%</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr class="rank-row current-user">
+                                        <td><span class="rank-number">47</span></td>
+                                        <td>
+                                            <div class="participant-info">
+                                                <img src="https://ui-avatars.com/api/?name=You&background=667eea&color=fff&size=40"
+                                                    alt="You">
+                                                <div>
+                                                    <span class="name">You</span>
+                                                    <span class="location">Bogra, Bangladesh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="score average">78.2%</span></td>
+                                        <td>--:--</td>
+                                        <td>--</td>
+                                        <td><span class="status in-progress">In Progress</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-pagination">
+                            <button class="page-btn">← Previous</button>
+                            <span class="page-info">Showing 1-50 of 1,247 participants</span>
+                            <button class="page-btn">Next →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard-insights">
+            <div class="container">
+                <div class="insights-grid fade-in">
+                    <div class="insight-card">
+                        <div class="insight-icon">📈</div>
+                        <h3>Performance Trends</h3>
+                        <p>Top performers are showing consistent improvement in algebraic problem-solving techniques.
+                        </p>
+                        <div class="trend-indicator up">↗ +12% from last week</div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🎯</div>
+                        <h3>Most Challenging Topics</h3>
+                        <p>Calculus and Trigonometry questions have the lowest average scores this week.</p>
+                        <div class="difficulty-bar">
+                            <div class="difficulty-fill" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">⏱️</div>
+                        <h3>Time Management</h3>
+                        <p>Average completion time: 73 minutes. Top performers finish in under 70 minutes.</p>
+                        <div class="time-stats">
+                            <span>Avg: 73min</span>
+                            <span>Top 10%: 68min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindQ</h3>
+                    <p>Empowering exam aspirants with intelligent assessment tools and performance insights. Know your
+                        position, excel your performance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="index.html#running-exams">Running Exams</a></p>
+                    <p><a href="index.html#features">Features</a></p>
+                    <p><a href="leaderboard.html">Leaderboard</a></p>
+                    <p><a href="#contact">Contact Us</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Exam Categories</h3>
+                    <p><a href="#">Admission Tests</a></p>
+                    <p><a href="#">Academic Exams</a></p>
+                    <p><a href="#">Job Assessments</a></p>
+                    <p><a href="#">Skill Tests</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Contact Support</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindQ. All rights reserved. Made with ❤️ for exam aspirants.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="leaderboard.js"></script>
+</body>
+
+</html>
