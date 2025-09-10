@@ -90,7 +90,8 @@ nav {
     position: relative;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: #667eea;
 }
 
@@ -105,7 +106,8 @@ nav {
     transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
     width: 100%;
 }
 
@@ -514,7 +516,6 @@ nav {
     color: #666;
     line-height: 1.6;
 }
-
 
 /* Stats Section */
 .stats {
